@@ -38,10 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
     'oauth2',
-=======
->>>>>>> 1bc1a3998f38537f0bf686622bbc5207afe0830d
+
 )
 
 MIDDLEWARE_CLASSES = (
