@@ -11,6 +11,7 @@ urlpatterns = patterns('kutotike.views',
 
     url(r'^admin/', include(admin.site.urls)),
 )
-urlpatterns += patterns('',
+urlpatterns += patterns('tucao.views',
+	url(r'^tucao/$','tucao')
 )
 
