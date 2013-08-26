@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title>login</title>
+</head>
+<body>
+
+{% for item in items %}
+	<div style="margin: 20px;">
+		<p>{{item.site_name}}</p>
+		<a href="{{item.authorize_url|safe}}"><img src="images/{{item.site_name}}.png" /></a>
+	</div>
+{% endfor %}
+</body>
+</html>
