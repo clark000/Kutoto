@@ -1,5 +1,5 @@
 """
-Django settings for kutokite project.
+Django settings for kutotike project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/dev/topics/settings/
@@ -13,7 +13,7 @@ import os
 PROJECT_PATH = os.path.realpath(os.path.dirname(os.path.realpath(__file__))+'/../').replace('\\', '/')
 
 
-PROJECT_SERVER = 'test.kutokite.org'
+PROJECT_SERVER = 'test.kutotike.org'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/dev/howto/deployment/checklist/
@@ -38,7 +38,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'oauth2',
 
 )
 
@@ -51,9 +50,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'kutokite.urls'
+ROOT_URLCONF = 'kutotike.urls'
 
-WSGI_APPLICATION = 'kutokite.wsgi.application'
+WSGI_APPLICATION = 'kutotike.wsgi.application'
 
 
 # Database
