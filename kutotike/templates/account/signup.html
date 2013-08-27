@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+
+{% block title %}用户注册{% endblock %}
+
+{% block content %}
+{% if form.is_valid %}
+<p>恭喜您，注册成功！</p>
+<p><a href="/account/login/">现在登录</a></p>
+{% else %}
+<form action="" method="post">{% csrf_token %}
+{{ form.as_p }}
+<p><input type="submit" value="注册" class="btn" /></p>
+</form>
+{% endif %}
+
+{% endblock %}

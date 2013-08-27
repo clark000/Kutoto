@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+
+{% block title %}用户登录{% endblock %}
+
+{% block content %}
+{% if form.errors %}
+<p class="alert alert-error">登录失败，请检查用户名和密码是否正确。</p>
+{% endif %}
+<form action="" method="post">{% csrf_token %}
+<label for="username">用户名</label>
+<input type="text" name="username" value="" id="username">
+<label for="password">密码</label>
+<input type="password" name="password" value="" id="password">
+<br />
+<input type="submit" value="登录" class="btn" />
+<input type="hidden" name="next" value="{{ next|escape }}" />
+</form>
+{% endblock %}
